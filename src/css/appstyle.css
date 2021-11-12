@@ -1,0 +1,41 @@
+.app__body{
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(to right, rgb(126, 225, 255) 5%, rgb(0, 91, 177) 95%);
+}
+
+.app__body .accordian__wrapper{
+  width: 40%;
+  min-width: 400px;
+  max-width: 700px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.8rem 0;
+  justify-content: flex-start;
+  align-items: stretch;
+}
+
+.app__body .accordian__wrapper .accordian__tabsList{
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: rgb(0, 102, 255);
+  border-radius: 0.85em;
+  padding: 0.3em;
+}
+
+.app__body .accordian__wrapper .accordian__tabsList .accordian__tab{
+  padding: 0.95em 1em;
+  background-color: transparent;
+  flex-grow: 1;
+  text-align: center;
+  border-radius: 0.6em;
+  color: white;
+  text-transform: capitalize;
+}
+
+.app__body .accordian__wrapper .accordian__tabsList .accordian__tab:hover{
+  background-color: rgb(60, 138, 255);
+  cursor: pointer;
+}
