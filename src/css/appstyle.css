@@ -39,3 +39,35 @@
   background-color: rgb(60, 138, 255);
   cursor: pointer;
 }
+
+/* active tab */
+.__active-tab {
+  background-color: white !important;
+  color: rgb(0, 102, 255) !important; 
+}
+
+.accordion__panel-wrapper{
+  background-color: white;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-radius: 0.85em;
+  padding: 1em;
+}
+
+.accordian__panel{
+  border-radius: 0.85em;
+  padding: 1em;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  border-radius: 0.85em;
+  padding: 1em;
+}
+
+.accordian__panel:hover{
+  background-color: rgba(0, 0, 0, 0.0851);
+  cursor: pointer;
+}

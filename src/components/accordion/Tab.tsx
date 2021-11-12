@@ -2,12 +2,11 @@ import Group from "./Group";
 import List from "./List";
 import Panels from "./Panels";
 import Panel from "./Panel";
-import { ITab, TabProps } from "../../interfaces/accordian";
+import { ITab } from "../../interfaces/accordian";
 
-
-const Tab: ITab = (props: TabProps) => {
+const Tab: ITab = (props: any) => {
   return (
-    <div onClick={props.onclick} className='accordian__tab'>
+    <div onClick={() => { props.handleCurrentTabIndex(props.tabIndex) }} className={(props.activeTab) ? `${props.activeTab} accordian__tab` : "accordian__tab"}>
       {props.children}
     </div>
   )

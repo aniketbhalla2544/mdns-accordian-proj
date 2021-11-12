@@ -1,7 +1,8 @@
-const Panel = () => {
+
+const Panel = (props: any) => {
   return (
-    <div>
-      <p>This is Tab.Panel component</p>
+    <div className='accordian__panel'>
+     {props.children}
     </div>
   )
 }

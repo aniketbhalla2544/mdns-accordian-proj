@@ -1,25 +1,25 @@
-import { Children, cloneElement, useEffect, useState } from "react";
+import { Children, cloneElement, useState } from "react";
 import { GroupProps } from "../../interfaces/accordian";
 
 const Group = (props: GroupProps) => {
 
-  const [tabIndexes, setTabIndexes]: [number[], any] = useState([]);
+  const [currentTabIndex, setCurrentTabIndex] = useState(0);
 
-  const handleTabIndexesChange = (_tabIndexes: number[]) => {
-    setTabIndexes(_tabIndexes);
+  const handleCurrentTabIndex = (currentTabIndex: number): void => {
+    setCurrentTabIndex(currentTabIndex);
   }
-
-  useEffect(() => {
-    Children.forEach(props.children, (child: any, index) => {
-      if (index === 0) {
-        cloneElement(child, { tabIndexes: tabIndexes, setTabIndexes: handleTabIndexesChange }, child.props.children)
-      }      
-    });
-  }, [props.children]);
 
   return (
     <div className='accordian__wrapper container'>
-      {props.children}
+      {`current Tab: ${currentTabIndex}`}
+      {
+          Children.map(props.children, (child: any, index: number) => {
+            return (index === 0)
+              // tab indexes data passed to tab.list child only
+              ? cloneElement(child, { currentTabIndex: currentTabIndex, handleCurrentTabIndex: handleCurrentTabIndex }, child.props.children)
+              : cloneElement(child, { currentTabIndex: currentTabIndex }, child.props.children)
+          })
+      }
     </div>
   )
 }

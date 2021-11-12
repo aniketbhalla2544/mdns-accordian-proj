@@ -7,8 +7,9 @@ export type GroupProps =  {
 
 export type ListProps =  {
   children: ReactElement[],
-  tabIndexes: number[],
-  setTabIndexes: (_tabIndexes: number[]) => void
+  tabIndexes?: number[],
+  setTabIndexes?: (_tabIndexes: number[]) => void
+  handleCurrentTabIndex?: (currentTabIndex: number) => void
 }
 
 export type PanelProps =  {
