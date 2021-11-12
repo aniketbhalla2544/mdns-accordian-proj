@@ -11,7 +11,7 @@ const Group = (props: GroupProps) => {
 
   return (
     <div className='accordian__wrapper container'>
-      {`current Tab: ${currentTabIndex}`}
+      {`current Tab: ${currentTabIndex + 1}`}
       {
           Children.map(props.children, (child: any, index: number) => {
             return (index === 0)

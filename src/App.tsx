@@ -18,6 +18,9 @@ function App() {
           <Tab>
             trending
           </Tab>
+          <Tab>
+            declining
+          </Tab>
         </Tab.List>
 
         <Tab.Panels>
@@ -31,6 +34,10 @@ function App() {
           </Tab.Panel>
           <Tab.Panel>
             <h1 className='fs-3'>Panel 3</h1>
+            <p>Third panel</p>
+          </Tab.Panel>
+          <Tab.Panel>
+            <h1 className='fs-3'>Panel 4</h1>
             <p>Third panel</p>
           </Tab.Panel>
         </Tab.Panels>
