@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/mdns-accordian-proj/static/css/main.21bbe707.chunk.css",
+    "main.js": "/mdns-accordian-proj/static/js/main.b255ebe5.chunk.js",
+    "main.js.map": "/mdns-accordian-proj/static/js/main.b255ebe5.chunk.js.map",
+    "runtime-main.js": "/mdns-accordian-proj/static/js/runtime-main.67554a5a.js",
+    "runtime-main.js.map": "/mdns-accordian-proj/static/js/runtime-main.67554a5a.js.map",
+    "static/css/2.a75f5a2c.chunk.css": "/mdns-accordian-proj/static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.1bec8481.chunk.js": "/mdns-accordian-proj/static/js/2.1bec8481.chunk.js",
+    "static/js/2.1bec8481.chunk.js.map": "/mdns-accordian-proj/static/js/2.1bec8481.chunk.js.map",
+    "static/js/3.39fe8fdd.chunk.js": "/mdns-accordian-proj/static/js/3.39fe8fdd.chunk.js",
+    "static/js/3.39fe8fdd.chunk.js.map": "/mdns-accordian-proj/static/js/3.39fe8fdd.chunk.js.map",
+    "index.html": "/mdns-accordian-proj/index.html",
+    "static/css/2.a75f5a2c.chunk.css.map": "/mdns-accordian-proj/static/css/2.a75f5a2c.chunk.css.map",
+    "static/css/main.21bbe707.chunk.css.map": "/mdns-accordian-proj/static/css/main.21bbe707.chunk.css.map",
+    "static/js/2.1bec8481.chunk.js.LICENSE.txt": "/mdns-accordian-proj/static/js/2.1bec8481.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.67554a5a.js",
+    "static/css/2.a75f5a2c.chunk.css",
+    "static/js/2.1bec8481.chunk.js",
+    "static/css/main.21bbe707.chunk.css",
+    "static/js/main.b255ebe5.chunk.js"
+  ]
+}
